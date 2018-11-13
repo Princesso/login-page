@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Ubuntu, Sans-Serif;
+  font-weight: 300;
+  background-color: #181818;
+  color: #fff;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#left #main-footer {
+  flex-shrink: 0;
+}
+
+#right {
+  flex: 1;
+}
+
+/* Sign In*/
+
+#sign-in {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#sign-in form {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+#sign-in .logo {
+  margin-bottom: 8vh;
+}
+
+#sign-in .logo img {
+  width: 300px;
+}
+
+#sign-in label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#sign-in .text-input {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 2px;
+  background: #181818;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  line-height: 1.3rem;
+}
+
+#sign-in .primary-btn {
+  width: 100%;
+}
+
+#sign-in .secondary-btn,
+.or,
+.links {
+  width: 80%;
+}
+
+#sign-in .links a {
+  display: block;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#sign-in .or {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+
+#sign-in .or .bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #aaa;
+}
+
+#sign-in .or span {
+  color: #ccc;
+  padding: 0 0.8rem;
+}
+
+/* Showcase */
+#showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('img/bg-amanjakhar.jpg') no-repeat center center / cover;
+  height: 100vh;
+  
+}
+
+#showcase .showcase-text {
+  font-size: 3.0rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+#showcase .secondary-btn {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Footer */
+#main-footer {
+  color: #ccc;
+  text-align: center;
+  max-width: 100%;
+  font-size: 0.8rem;
+  padding-top: 5rem;
+  flex-shrink: 0;
+}
+
+#main-footer a {
+  text-decoration: underline;
+  color: #f96816;
+}
+
+/* Buttons */
+.primary-btn {
+  padding: 0.7rem 1rem;
+  font-weight: 500;
+  height: 2.7rem;
+  display: block;
+  background: #f96816;
+  border-radius: 2px;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.primary-btn:hover {
+  background: #ff7b39;
+}
+
+.secondary-btn {
+  padding: 0.7rem 1rem;
+  font-weight: 500;
+  height: 2.7rem;
+  display: block;
+  background: none;
+  border-radius: 2px;
+  border: 1px solid #f4f4f4;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+  border: 1px solid #ff7b39;
+}
+
+/* Media Queries */
+@media(min-width: 1200px) {
+  #left {
+    flex: 4;
+  }
+  
+  #right {
+    flex: 6;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  
+  #left {
+    justify-content: flex-start;
+    margin-top: 4vh;
+    
+  }
+  
+  #right {
+    display: none;
+  }
+  
+  #sign-in .logo {
+    margin-bottom: 2vh;
+  }
+  
+  #sign-in .text-input {
+    margin-bottom: 0.7rem;
+  }
+  
+  #main-footer {
+    padding-top: 1.5rem; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

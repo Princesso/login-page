@@ -1,0 +1,15 @@
+{
+  "name": "login-landing-page",
+  "version": "1.0.0",
+  "description": "Login landing page modeled after PluralSight login page",
+  "main": "index.js",
+  "home": "https://wptechprodigy.github.io/login-page",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Waheed Afolabi",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
