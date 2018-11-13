@@ -21,4 +21,4 @@ https://wptechprodigy.github.io/login-page</p>
 <p>Thanks for checking out my repo again.</p>
 
 <p>Kind regards,<br>
-Waheed (<em>webdevsensei/em>)</p>
+Waheed (<em>webdevsensei</em>)</p>
